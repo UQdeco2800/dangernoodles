@@ -1,0 +1,10 @@
+diff a/dangernoodles/src/main/java/uq/deco2800/dangernoodles/components/AIComponent.java b/dangernoodles/src/main/java/uq/deco2800/dangernoodles/components/AIComponent.java	(rejected hunks)
+@@ -8,8 +8,6 @@
+     private PositionComponent targetPosition; // AI player's enemy's position
+     private PositionComponent weaponPosition; // AI player's weapon position (for trajectory calculation)
+     private PositionComponent destination; // AI player's movement destination
+-    private double projectileSpeed; // the initial speed of the projectile set by weapon
+-    private boolean movementStatus; // a flag to indicate whether the AI is moving
+     private boolean firedWeapon;
+     private String difficulty;
+     private double randomness; // randomness should never be greater than 1 or less than 0

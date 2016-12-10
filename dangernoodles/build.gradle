@@ -1,0 +1,27 @@
+
+dependencies {
+   testCompile group: 'org.dbunit', name: 'dbunit', version: '2.5.1'
+   testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+   testCompile "org.testfx:testfx-core:4.0.+"
+   testCompile "org.testfx:testfx-junit:4.0+"
+   testCompile "org.testfx:testfx-legacy:4.0.+", {
+       exclude group: "junit", module: "junit"
+   }
+   testCompile group: 'org.testfx', name: 'openjfx-monocle', version: '1.8.0_20'
+}
+
+//apply plugin: 'org.flywaydb.flyway'
+//buildscript {
+//    repositories {
+//        mavenCentral()
+//    }
+//    dependencies {
+//        classpath group: 'org.flywaydb', name: 'flyway-gradle-plugin', version: '3.2.1'
+//    }
+//
+//}
+
+task(run, dependsOn: "classes", type: JavaExec) {
+   main = "uq.deco2800.dangernoodles.Dangernoodles"
+   classpath = sourceSets.main.runtimeClasspath
+}

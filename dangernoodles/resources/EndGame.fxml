@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane id="pane" prefHeight="600.0" prefWidth="900.0" stylesheets="@SplashScreen.css" xmlns="http://javafx.com/javafx/8.0.76-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uq.deco2800.dangernoodles.windowhandlers.EndGameHandler">
+    <GridPane id="formBox" stylesheets="@SplashScreen.css">
+        <Label alignment="CENTER" prefHeight="17.0" prefWidth="300.0" style="-fx-font-size: 26pt; -fx-text-fill: #000;" stylesheets="@SplashScreen.css" text="GAME OVER" textAlignment="CENTER" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="TOP" GridPane.vgrow="ALWAYS">
+            <font>
+                <Font size="28.0" />
+            </font>
+        </Label>
+        <Label fx:id="messageLabel" alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="300.0" text="Team X Wins" textAlignment="CENTER" GridPane.columnSpan="2147483647" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="SOMETIMES">
+            <font>
+                <Font size="20.0" />
+            </font>
+         <GridPane.margin>
+            <Insets top="40.0" />
+         </GridPane.margin>
+        </Label>
+
+        <Button id="buttonPrimary" fx:id="mainMenuButton" maxWidth="903.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="299.0" style="-fx-font-size: 18pt;" stylesheets="@SplashScreen.css" text="NEW GAME" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <effect>
+                <InnerShadow />
+            </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+        </Button>
+        <Button fx:id="exitButton" maxWidth="903.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="299.0" stylesheets="@SplashScreen.css" text="EXIT" GridPane.columnIndex="1" GridPane.rowIndex="2">
+            <effect>
+                <InnerShadow />
+            </effect>
+         <font>
+            <Font size="18.0" />
+         </font>
+        </Button>
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="142.0" minWidth="10.0" prefWidth="68.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.66665649414062" minWidth="10.0" prefWidth="209.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="240.66665649414062" minWidth="10.0" prefWidth="64.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints fillHeight="false" maxHeight="1.7976931348623157E308" minHeight="10.0" prefHeight="40.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="57.0" minHeight="10.0" prefHeight="50.0" vgrow="ALWAYS" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="ALWAYS" />
+        </rowConstraints>
+        <padding>
+            <Insets left="50.0" />
+        </padding>
+        <effect>
+            <DropShadow blurType="GAUSSIAN" height="112.07" radius="57.052499999999995" width="118.14" />
+        </effect>
+        <StackPane.margin>
+            <Insets top="100.0" />
+        </StackPane.margin>
+    </GridPane>
+</StackPane>

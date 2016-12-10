@@ -1,0 +1,23 @@
+/*
+Created by Siyu Liu on 11/09
+To set background images for right anchor pane
+*/
+
+
+.pane1 {
+  -fx-background-image: url("./sky1.jpg");
+  -fx-background-size: cover;
+  -fx-background-position: center center;
+}
+
+.pane2 {
+  -fx-background-image: url("./sky2.jpg");
+  -fx-background-size: cover;
+  -fx-background-position: center center;
+}
+
+.pane3 {
+  -fx-background-image: url("./sky3.jpg");
+  -fx-background-size: cover;
+  -fx-background-position: center center;
+}

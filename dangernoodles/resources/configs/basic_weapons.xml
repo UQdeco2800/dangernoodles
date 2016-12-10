@@ -1,0 +1,90 @@
+<?xml version="1.0" ?>
+<weapons>
+	<weapon id="0">
+		<name>Grenade</name>
+		<category>Thrown</category>
+		<spritesheet>weapons/grenade_left.png</spritesheet>
+		<height>15</height>
+		<width>15</width>
+		<powered>true</powered>
+		<makesProjectiles>true</makesProjectiles>
+		<numOfProjectiles>1</numOfProjectiles>
+		<projectileType>3</projectileType>
+	</weapon>
+	<weapon id="1">
+		<name>Frag Grenade</name>
+		<category>Thrown</category>
+		<spritesheet>weapons/grenade_left.png</spritesheet>
+		<height>15</height>
+		<width>15</width>
+		<powered>true</powered>
+		<makesProjectiles>true</makesProjectiles>
+		<numOfProjectiles>1</numOfProjectiles>
+		<projectileType>4</projectileType>
+	</weapon>
+	<weapon id="2">
+		<name>Handgun</name>
+		<category>Guns</category>
+		<spritesheet>weapons/handgun_right.png</spritesheet>
+		<height>12</height>
+		<width>24</width>
+		<powered>false</powered>
+		<makesProjectiles>true</makesProjectiles>
+		<numOfProjectiles>1</numOfProjectiles>
+		<projectileType>1</projectileType>
+	</weapon>
+	<weapon id="3">
+        <name>Crazy Grenade</name>
+        <category>Thrown</category>
+        <spritesheet>weapons/grenade_left.png</spritesheet>
+        <height>15</height>
+        <width>15</width>
+        <powered>true</powered>
+        <makesProjectiles>true</makesProjectiles>
+        <numOfProjectiles>1</numOfProjectiles>
+        <projectileType>5</projectileType>
+    </weapon>
+	<weapon id="4">
+		<name>Rocket Launcher</name>
+		<category>Guns</category>
+		<spritesheet>weapons/rocket_launcher_left.png</spritesheet>
+		<height>15</height>
+		<width>32</width>
+		<powered>true</powered>
+		<makesProjectiles>true</makesProjectiles>
+		<numOfProjectiles>1</numOfProjectiles>
+		<projectileType>2</projectileType>
+	</weapon>
+	<weapon id="5">
+        <name>Machine Gun</name>
+        <category>Guns</category>
+        <spritesheet>weapons/machinegun_right.png</spritesheet>
+        <height>15</height>
+        <width>32</width>
+        <powered>true</powered>
+        <makesProjectiles>true</makesProjectiles>
+        <numOfProjectiles>1</numOfProjectiles>
+        <projectileType>10</projectileType>
+    </weapon>
+    <weapon id="6">
+        <name>Rail Gun</name>
+        <category>Guns</category>
+        <spritesheet>weapons/railgun_right.png</spritesheet>
+        <height>15</height>
+        <width>32</width>
+        <powered>false</powered>
+        <makesProjectiles>true</makesProjectiles>
+        <numOfProjectiles>1</numOfProjectiles>
+        <projectileType>11</projectileType>
+    </weapon>
+    <weapon id="7">
+    	<name>Rusty Buster Sword</name><category>Melee</category>
+    	<spritesheet>weapons/blade_right.png</spritesheet>
+    	<height>50</height>
+    	<width>8</width>
+    	<powered>false</powered>
+    	<makesProjectiles>true</makesProjectiles>
+    	<numOfProjectiles>1</numOfProjectiles>
+    	<projectileType>12</projectileType>
+    </weapon>
+</weapons>

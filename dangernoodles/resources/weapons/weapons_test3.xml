@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+<weapons>
+	<weapon id="1">
+		<name>Handgun</name>
+		<category>Guns</category>
+		<spritesheet></spritesheet>
+		<height>34</height>
+		<width>64</width>
+		<powered>false</powered>
+		<makesProjectiles>true</makesProjectiles>
+		<numOfProjectiles>1</numOfProjectiles>
+		<projectileType>1</projectileType>
+	</weapon>
+	<weapon id="2">
+		<name>Rocket Launcher</name>
+		<category>Guns</category>
+		<spritesheet></spritesheet>
+		<height>10</height>
+		<width>10</width>
+		<powered>false</powered>
+		<makesProjectiles>true</makesProjectiles>
+		<numOfProjectiles>1</numOfProjectiles>
+		<projectileType>2</projectileType>
+	</weapon>
+	<weapon id="3">
+		<name>Grenade</name>
+		<category>Explosives</category>
+		<spritesheet></spritesheet>
+		<height>20</height>
+		<width>10</width>
+		<powered>true</powered>
+		<makesProjectiles>true</makesProjectiles>
+		<numOfProjectiles>1</numOfProjectiles>
+		<projectileType>3</projectileType>
+	</weapon>
+</weapons>

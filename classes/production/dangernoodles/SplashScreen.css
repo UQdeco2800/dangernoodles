@@ -1,0 +1,48 @@
+/*This was basically an attempt to see if I could put a splash image onto the splash page.
+
+##############Please feel free to remove or change at will.###############
+
+I'm afraid that the styling / code is a mix of CSS below and FXML from editing in sceneBuilder.
+
+I used intellij and http://gluonhq.com/labs/scene-builder/#download <--this as my path to scenebuilder.
+
+The original login page can be returned by editing Dangernoodles to point to SplashScreen.fxml instead of
+SplashScreen2.fxml
+
+*/
+
+
+/*StackPane*/
+#pane{
+        -fx-background-image: url("Splash_snek.jpg");
+        -fx-background-size: 100% auto;
+        -fx-background-position: center center;
+/*
+        -fx-effect: dropshadow(three-pass-box, black, 30, 0.5, 0, 0);
+*/
+}
+
+/*DangerNoodles*/
+#title{
+        -fx-background-position: top center;
+        margin: 100px 80px 30px 80px;
+}
+
+/*text field + Password field inputs*/
+#textField{
+        margin: 10px 80px 20px 80px;
+}
+
+/*password / username labels*/
+#userpassLabel{
+        margin: 10px 80px 10px 80px;
+}
+
+/*login button*/
+#login{
+        margin: 10px 80px 10px 80px;
+}
+
+#dangernoodle{
+        visibility: hidden;
+}

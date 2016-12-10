@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<projectiles>
+	<projectile id="1">
+        <name>Test Rocket</name>
+        <sprite>test.png</sprite>
+        <height>16</height>
+        <width>16</width>
+        <mass>1.50</mass>
+        <damage>25</damage>
+        <timesOut>true</timesOut>
+        <lifeTicks>5000</lifeTicks>
+        <explodes>true</explodes>
+        <blastRadius>10</blastRadius>
+    </projectile>
+</projectiles>

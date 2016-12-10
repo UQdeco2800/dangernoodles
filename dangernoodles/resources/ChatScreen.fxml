@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="464.0" prefWidth="657.0" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <VBox prefHeight="344.0" prefWidth="483.0" BorderPane.alignment="CENTER">
+         <children>
+            <ListView prefHeight="388.0" prefWidth="557.0" />
+            <HBox prefHeight="0.0" prefWidth="500.0">
+               <children>
+                  <TextArea prefHeight="30.0" prefWidth="435.0" />
+                  <Button alignment="CENTER" mnemonicParsing="false" prefHeight="37.0" prefWidth="93.0" text="Send" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <right>
+      <HBox fx:id="onlineUsersHbox" minHeight="-Infinity" minWidth="-Infinity" prefHeight="408.0" prefWidth="150.0" stylesheets="@../../../JavaFX-Chat/client/src/main/resources/styles/ListViewStyle.css" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" prefHeight="35.0" prefWidth="124.0" text="Users" textAlignment="CENTER">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets bottom="10.0" />
+               </opaqueInsets>
+            </Label>
+         </children>
+      </HBox>
+   </right>
+   <top>
+      <HBox alignment="CENTER_LEFT" prefHeight="36.0" prefWidth="657.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="BOTTOM_CENTER" contentDisplay="CENTER" prefHeight="17.0" prefWidth="76.0" text="User Name" />
+         </children>
+      </HBox>
+   </top>
+</BorderPane>

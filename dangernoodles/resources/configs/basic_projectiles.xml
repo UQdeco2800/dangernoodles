@@ -1,0 +1,153 @@
+<?xml version="1.0" ?>
+<projectiles>
+	<projectile id="1">
+		<name>Bullet</name>
+		<sprite>projectiles/bullet_right.png</sprite>
+		<height>6</height>
+		<width>14</width>
+		<mass>0</mass>
+		<damage>5</damage>
+		<timesOut>false</timesOut>
+		<lifeTicks>0</lifeTicks>
+	</projectile>
+	<projectile id="2">
+        <name>Test Rocket</name>
+        <sprite>projectiles/test.png</sprite>
+        <height>16</height>
+        <width>16</width>
+        <mass>2</mass>
+        <damage>30</damage>
+        <timesOut>true</timesOut>
+        <lifeTicks>3000</lifeTicks>
+        <explodes>true</explodes>
+        <blastRadius>65</blastRadius>
+    </projectile>
+    <projectile id="3">
+        <name>Grenade</name>
+        <sprite>weapons/grenade_right.png</sprite>
+        <height>15</height>
+        <width>15</width>
+        <mass>0.5</mass>
+        <damage>10</damage>
+        <timesOut>true</timesOut>
+        <lifeTicks>1500</lifeTicks>
+        <explodes>true</explodes>
+        <blastRadius>45</blastRadius>
+    </projectile>
+    <projectile id="4">
+        <name>Frag Grenade</name>
+        <sprite>weapons/grenade_right.png</sprite>
+        <height>15</height>
+        <width>15</width>
+        <mass>1.5</mass>
+        <damage>15</damage>
+        <timesOut>true</timesOut>
+        <lifeTicks>1200</lifeTicks>
+        <explodes>true</explodes>
+        <blastRadius>70</blastRadius>
+        <makesClusters>true</makesClusters>
+        <numOfClusters>5</numOfClusters>
+        <clusterType>3</clusterType>
+    </projectile>
+    <projectile id="5">
+        <name>Crazy Grenade</name>
+        <sprite>weapons/grenade_right.png</sprite>
+        <height>15</height>
+        <width>15</width>
+        <mass>0.25</mass>
+        <damage>15</damage>
+        <timesOut>true</timesOut>
+        <lifeTicks>900</lifeTicks>
+        <explodes>true</explodes>
+        <blastRadius>70</blastRadius>
+        <makesClusters>true</makesClusters>
+        <numOfClusters>3</numOfClusters>
+        <clusterType>6</clusterType> <!-- 5 -> 6 -> 7 -> 8 -> 9 - end -->
+    </projectile>
+    <projectile id="6">
+        <name>Crazy Frag 1</name>
+        <sprite>weapons/grenade_right.png</sprite>
+        <height>15</height>
+        <width>15</width>
+        <mass>0.25</mass>
+        <damage>15</damage>
+        <timesOut>true</timesOut>
+        <lifeTicks>700</lifeTicks>
+        <explodes>true</explodes>
+        <blastRadius>50</blastRadius>
+        <makesClusters>true</makesClusters>
+        <numOfClusters>3</numOfClusters>
+        <clusterType>7</clusterType>
+    </projectile>
+    <projectile id="7">
+        <name>Crazy Frag 2</name>
+        <sprite>weapons/grenade_right.png</sprite>
+        <height>15</height>
+        <width>15</width>
+        <mass>0.25</mass>
+        <damage>5</damage>
+        <timesOut>true</timesOut>
+        <lifeTicks>700</lifeTicks>
+        <explodes>true</explodes>
+        <blastRadius>50</blastRadius>
+        <makesClusters>true</makesClusters>
+        <numOfClusters>3</numOfClusters>
+        <clusterType>8</clusterType>
+    </projectile>
+    <projectile id="8">
+        <name>Crazy Frag 3</name>
+        <sprite>weapons/grenade_right.png</sprite>
+        <height>15</height>
+        <width>15</width>
+        <mass>0.25</mass>
+        <damage>5</damage>
+        <timesOut>true</timesOut>
+        <lifeTicks>700</lifeTicks>
+        <explodes>true</explodes>
+        <blastRadius>50</blastRadius>
+        <makesClusters>true</makesClusters>
+        <numOfClusters>3</numOfClusters>
+        <clusterType>9</clusterType>
+    </projectile>
+    <projectile id="9">
+        <name>Crazy Frag 4</name>
+        <sprite>weapons/grenade_right.png</sprite>
+        <height>15</height>
+        <width>20</width>
+        <mass>0.25</mass>
+        <damage>20</damage>
+        <timesOut>false</timesOut>
+        <lifeTicks>0</lifeTicks>
+        <explodes>true</explodes>
+        <blastRadius>70</blastRadius>
+    </projectile>
+    <projectile id="10">
+        <name>Bullet</name>
+        <sprite>projectiles/bullet_right.png</sprite>
+        <height>3</height>
+        <width>11</width>
+        <mass>0</mass>
+        <damage>6</damage>
+        <timesOut>false</timesOut>
+        <lifeTicks>0</lifeTicks>
+    </projectile>
+    <projectile id="11">
+        <name>Energy Blast</name>
+        <sprite>weapons/energy_bolt_right.png</sprite>
+        <height>6</height>
+        <width>25</width>
+        <mass>0</mass>
+        <damage>38</damage>
+        <timesOut>false</timesOut>
+        <lifeTicks>0</lifeTicks>
+    </projectile>
+    <projectile id="12">
+    	<name>Melee Swing</name><sprite></sprite>
+    	<height>0</height>
+    	<width>0</width>
+    	<mass>0</mass>
+    	<damage>60</damage>
+    	<timesOut>false</timesOut>
+    	<lifeTicks>0</lifeTicks>
+    	</projectile>
+</projectiles>

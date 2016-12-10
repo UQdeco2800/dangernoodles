@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<weapons>
+	<weapon id="1">
+		<name>Knife</name>
+		<category>Melee</category>
+		<spritesheet>resources/weapons/weapons_test1.png</spritesheet>
+		<height>34</height>
+		<width>64</width>
+		<powered>false</powered>
+	</weapon>
+</weapons>

@@ -1,0 +1,48 @@
+.DS_Store
+
+*.swp
+*~
+
+bin/
+lib/
+
+
+# Gradle
+build
+.gradle
+
+# Eclipse
+.project
+.classpath
+.settings
+.metadata
+
+# IntelliJ IDEA
+*.iml
+.idea
+
+# Crash reports
+*.log
+
+# Database
+
+DecoWorldDB/
+decoworld.vanilla/resources/Thumbs.db
+/bin
+
+
+# Merge conflicts
+*.orig
+
+
+# Local sonar installations
+sonar-project.properties
+.sonar/
+
+# Ignore embedded derby database
+decoMineDB/
+
+#logs
+logs
+
+*.class

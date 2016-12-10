@@ -1,0 +1,26 @@
+#pane {
+    -fx-background-image: url("login_background.jpg");
+    -fx-background-size: auto 100%;
+    -fx-background-position: center center;
+}
+
+HBox{
+    -fx-font-family: 'Roboto', 'Helvetica Neue', Verdana, Arial, system;
+}
+
+Button {
+    -fx-background-color: #fff;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #000;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+    -fx-font-size: 18pt;
+    -fx-font-family: 'Roboto', 'Helvetica Neue', Verdana, Arial, system;
+
+}
+
+Button:hover {
+    -fx-background-color: #ccc;
+}
+
+

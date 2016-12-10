@@ -1,0 +1,59 @@
+/**
+* scene builder -> http://gluonhq.com/labs/scene-builder/#download
+* Created by Siyu Liu
+*/
+
+/* Import Roboto font from Google fonts*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,700');
+
+/*StackPane*/
+#pane {
+    -fx-background-image: url("login_background.jpg");
+    -fx-background-size: auto 100%;
+    -fx-background-position: center center;
+}
+
+/* Form elements */
+Label {
+    margin: 15px 80px;
+    -fx-font-family: 'Roboto', 'Helvetica Neue', Verdana, Arial, system;
+    -fx-font-size: 16pt;
+}
+
+#formBox {
+    -fx-background-color:  #fff;
+    -fx-border-radius: 20px;
+    -fx-border-color: #fff;
+    -fx-border-width: 3px;
+    -fx-padding: 30px;
+    -fx-max-height: 300px;
+    -fx-max-width: 500px;
+}
+
+ChoiceBox {
+    -fx-font-size : 15pt;
+}
+
+/* Buttons */
+Button {
+    -fx-background-color: #fff;
+    -fx-background-insets: 0,1,2,3,0;
+    -fx-text-fill: #000;
+    -fx-padding: 10 20 10 20;
+    -fx-cursor: hand;
+    -fx-font-family: 'Roboto', 'Helvetica Neue', Verdana, Arial, system;
+    -fx-font-size: 18pt;
+}
+
+Button:hover {
+    -fx-background-color: #ccc;
+}
+#buttonPrimary {
+    -fx-font-size: 20pt;
+    -fx-background-color: #6b0707;
+    -fx-text-fill: #fff;
+}
+
+#buttonPrimary:hover {
+    -fx-background-color: #460505
+}

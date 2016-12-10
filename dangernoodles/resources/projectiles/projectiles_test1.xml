@@ -1,0 +1,11 @@
+<?xml version="1.0" ?>
+<projectiles>
+	<projectile id="1">
+		<name>Test Bullet</name>
+		<sprite>test.png</sprite>
+		<height>16</height>
+		<width>16</width>
+		<mass>0.05</mass>
+		<damage>5</damage>
+	</projectile>
+</projectiles>

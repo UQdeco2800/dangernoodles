@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane id="pane" fx:id="splashScreen" prefHeight="600.0" prefWidth="900.0" stylesheets="@SplashScreen.css" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uq.deco2800.dangernoodles.windowhandlers.SplashScreenHandler">
+    <children>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Pane prefHeight="200.0" prefWidth="300.0" />
+            <VBox prefHeight="319.0" prefWidth="300.0">
+               <children>
+                  <Label id="title" alignment="CENTER" maxWidth="900.0" prefHeight="39.0" prefWidth="900.0" stylesheets="@SplashScreen.css" text="Dangernoodles" textAlignment="CENTER" textFill="#d02727" textOverrun="CLIP">
+                     <font>
+                        <Font name="System Bold" size="41.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="100.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label id="userpass" fx:id="userLabel" prefHeight="17.0" prefWidth="300.0" stylesheets="@SplashScreen.css" text="Username:" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Label>
+                  <TextField id="textField" fx:id="userField" maxWidth="1.7976931348623157E308" stylesheets="@SplashScreen.css" />
+                  <Label id="userpassLabel" fx:id="passwordLabel" prefHeight="17.0" prefWidth="300.0" styleClass="loginLabel" text="Password:" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="32.0" />
+                     </font>
+                  </Label>
+                  <PasswordField id="passwordField" fx:id="passwordField" stylesheets="@SplashScreen.css" />
+                  <Button id="login" fx:id="loginButton" maxWidth="903.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="903.0" styleClass="loginButton" text="LOGIN">
+                     <VBox.margin>
+                        <Insets top="20.0" />
+                     </VBox.margin>
+                  </Button>
+                  <ImageView id="dangernnodle" fitHeight="300.0" fitWidth="300.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="/dangernoodles.jpg" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </children>
+            </VBox>
+            <Pane prefHeight="200.0" prefWidth="300.0">
+               <children>
+                  <Button fx:id="gkpr" alignment="CENTER_RIGHT" contentDisplay="TEXT_ONLY" focusTraversable="false" layoutX="242.0" layoutY="440.0" mnemonicParsing="false" opacity="0.17" pickOnBounds="false" scaleShape="false" style="-fx-background-color: Transparent;" text="π" textFill="WHITE">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <effect>
+                        <Blend mode="SCREEN" />
+                     </effect>
+                  </Button>
+               </children>
+            </Pane>
+         </children>
+      </HBox>
+    </children>
+</StackPane>

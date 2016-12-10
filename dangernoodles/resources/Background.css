@@ -1,0 +1,44 @@
+/*
+Created by Siyu Liu on 11/09
+
+Extended by Melissa Nguyen on 18/10 for weather systems background changes
+
+To set background images for right anchor pane
+*/
+
+
+.sunny {
+  -fx-background-image: url("./Backgrounds/SunnyBackground.png");
+  -fx-background-size: 100%;
+  -fx-background-position: top;
+}
+
+.rainy {
+  -fx-background-image: url("./Backgrounds/RainyBackground.png");
+  -fx-background-size: 100%;
+  -fx-background-position: top;
+}
+
+.snowy {
+  -fx-background-image: url("./Backgrounds/SnowyBackground.png");
+  -fx-background-size: 100%;
+  -fx-background-position: top;
+}
+
+.sunset {
+  -fx-background-image: url("./Backgrounds/SunsetBackground.jpg");
+  -fx-background-size: 100%;
+  -fx-background-position: top;
+}
+
+.night {
+  -fx-background-image: url("./Backgrounds/NightBackground.jpg");
+  -fx-background-size: 100%;
+  -fx-background-position: top;
+}
+
+.space {
+  -fx-background-image: url("./Backgrounds/SpaceBackground.jpg");
+  -fx-background-size: 100%;
+  -fx-background-position: top;
+}

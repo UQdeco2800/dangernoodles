@@ -1,0 +1,10 @@
+diff a/dangernoodles/resources/SplashScreen.css b/dangernoodles/resources/SplashScreen.css	(rejected hunks)
+@@ -5,6 +5,8 @@
+ I'm afraid that the styling / code is a mix of CSS below and FXML from editing in sceneBuilder.
+ 
+ I used intellij and http://gluonhq.com/labs/scene-builder/#download <--this as my path to scenebuilder.
++
++The original login page can be returned by editing
+ */
+ 
+ 

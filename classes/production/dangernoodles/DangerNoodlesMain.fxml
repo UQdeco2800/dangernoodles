@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+  <SplitPane fx:id="splitPane" dividerPositions="0.14524207011686144" focusTraversable="true" xmlns="http://javafx.com/javafx/8.0.60" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uq.deco2800.dangernoodles.windowhandlers.WindowHandler">
+      <items>
+          <AnchorPane fx:id="leftPane">
+              <children>
+            <TextField fx:id="toMessage" layoutX="4.0" layoutY="241.0" />
+            <Button fx:id="createButton" layoutX="4.0" layoutY="266.0" mnemonicParsing="false" onAction="#changeUserToMessage" text="Create Chat" />
+            <Label layoutX="3.0" layoutY="224.0" text="Enter another user's username" />
+            <Label layoutX="4.0" layoutY="391.0" text="Currently Messaging" />
+            <Label fx:id="messaging" layoutX="4.0" layoutY="408.0" prefHeight="17.0" prefWidth="109.0" text="username" />
+            <TextField fx:id="messageToSend" layoutX="4.0" layoutY="425.0" />
+            <Button fx:id="sendButton" layoutX="4.0" layoutY="450.0" mnemonicParsing="false" onAction="#sendMessage" text="Send Message" />
+              </children>
+          </AnchorPane>
+          <AnchorPane fx:id="rightPane" prefHeight="800.0" prefWidth="900.0" />
+      </items>
+  </SplitPane>

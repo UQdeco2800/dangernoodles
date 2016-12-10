@@ -1,0 +1,103 @@
+allprojects {
+    group = 'deco2800-2016-dangernoodles'
+    version = '0.1'
+
+}
+
+configurations.all {
+    // check for updates every build
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
+subprojects {
+    apply plugin: 'java';
+    apply plugin: 'eclipse';
+    apply plugin: 'idea';
+    apply plugin: 'jacoco';
+
+    jacoco {
+        toolVersion = "0.7.7.201606060606"
+    }
+
+    test {
+        jacoco {
+            append = false
+            destinationFile = file("$buildDir/jacoco/jacocoTest.exec")
+        }
+    }
+
+    tasks.withType(Javadoc) {
+        options.addStringOption('Xdoclint:none', '-quiet')
+    }
+
+    javadoc {
+        options.tags = ['require', 'ensure']
+    }
+
+    repositories {
+        mavenLocal()
+        maven { url 'http://deco2800-artifactory.uqcloud.net//artifactory/libs-release/' }
+    }
+
+    dependencies {
+        // DECO2800 dependencies
+        compile(group: 'uq.deco2800.singularity', name: 'common', version: '0' +
+                '.6-SNAPSHOT', changing: true)
+        compile(group: 'uq.deco2800.singularity', name: 'clients', version:
+                '0.6-SNAPSHOT', changing: true)
+
+        // Logging via Log4J 2.0 using the SLF4J API
+        compile group: 'org.slf4j', name: 'slf4j-api', version: '1.7.12'
+        compile group: 'org.apache.derby', name: 'derby', version: '10.9.1.0'
+
+        // Unit testing with JUnit
+        testCompile group: 'org.hamcrest', name: 'hamcrest-core', version: '1.3'
+        testCompile group: 'junit', name: 'junit', version: '4.12', {
+            exclude group: "org.hamcrest", module: "hamcrest-core"
+        }
+        testCompile "org.testfx:testfx-core:4.0.+"
+        testCompile "org.testfx:testfx-junit:4.0+"
+        testCompile "org.testfx:testfx-legacy:4.0.+", {
+            exclude group: "junit", module: "junit"
+        }
+        testCompile group: 'org.testfx', name: 'openjfx-monocle', version: '1.8.0_20'
+
+        // Mocking with Mockito
+        testCompile group: 'org.mockito', name: 'mockito-all', version: '1.10.19'
+        testCompile group: 'org.powermock', name: 'powermock-api-mockito', version: '1.6.2'
+        testCompile group: 'org.powermock', name: 'powermock-module-junit4', version: '1.6.2'
+    }
+
+    sourceSets {
+        main {
+            java {
+                srcDir 'src/main/java'
+            }
+            resources {
+                srcDir 'resources'
+            }
+        }
+
+        test {
+            java {
+                srcDir 'src/test/java'
+            }
+            resources {
+                srcDir 'resources'
+            }
+        }
+    }
+    test {
+        jvmArgs = [
+                "-Djava.awt.headless=true",
+                "-Dtestfx.robot=glass",
+                "-Dtestfx.headless=true",
+                "-Dprism.order=sw",
+                "-Dprism.text=t2K",
+                "-Dglass.platform=Monocle",
+                "-Dmonocle.platform=Headless",
+                "-Dprism.verbose=true",
+                "-Dprism.debugFonts=true"
+        ]
+    }
+}
